@@ -57,4 +57,3 @@ const question2 = new Question({
 
 console.log(question1.toString());
 console.log(question2.toString());
-// console.log("Hello World from OOP JS");
