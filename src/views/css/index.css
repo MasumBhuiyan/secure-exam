@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../../../resources/background.jpeg");
+  font-family: "Comfortaa";
+}
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box1";
+}
+
+.box1 {
+  grid-area: box1;
+  align-self: center;
+  justify-self: center;
+}
+
+.box2 {
+  grid-area: box2;
+  align-self: center;
+  justify-self: center;
+}
+
+.box3 {
+  grid-area: box3;
+  align-self: center;
+  justify-self: center;
+}
