@@ -25,11 +25,3 @@ class Written extends Question {
 }
 
 module.exports = Written;
-
-const written = new Written({
-    "questionString": "Write a short description about your aim in life?",
-    "correctAnswer": "None",
-    "answer": "My aim in life is to be a traveller."
-});
-
-console.log(written.toString());

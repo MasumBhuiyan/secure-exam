@@ -38,6 +38,3 @@ class Answer {
 }
 
 module.exports = Answer;
-
-const answer = new Answer(uuidv4(), "A");
-console.log(answer.toString());

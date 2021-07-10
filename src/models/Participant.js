@@ -1,6 +1,5 @@
 const { v4: uuidv4 } = require('uuid');
 const AnswerSheet = require('./AnswerSheet');
-const Answer = require('./Answer');
 
 const _id = new WeakMap();
 const _mark = new WeakMap();
@@ -84,13 +83,3 @@ class Participant {
 }
 
 module.exports = Participant;
-
-const participant = new Participant();
-
-const answer1 = new Answer(uuidv4(), "A"); 
-const answer2 = new Answer(uuidv4(), "B"); 
-
-console.log(participant.toString());
-participant.write(answer1);
-participant.write(answer2);
-console.log(participant.toString());

@@ -45,7 +45,3 @@ class Schedule {
 }
 
 module.exports = Schedule;
-
-const schedule = new Schedule(new Date(), 130);
-
-console.log(schedule.getSchedule());

@@ -1,7 +1,3 @@
-
-const Exam = require('./Exam');
-const Schedule = require('./Schedule');
-
 const _upcomingExams = new WeakMap();
 const _pastExams = new WeakMap();
 
@@ -57,9 +53,3 @@ class ScheduleManager {
 }
 
 module.exports = ScheduleManager;
-
-const scheduleManager = new ScheduleManager();
-scheduleManager.push(new Exam(new Date(), 30));
-scheduleManager.push(new Exam(new Date(), 40));
-
-console.log(scheduleManager.getUpcomingExams());

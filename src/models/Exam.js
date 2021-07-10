@@ -1,8 +1,5 @@
 const { v4:uuidv4 } = require('uuid');
-const Participant = require('./Participant');
 const Schedule = require('./Schedule');
-const Question = require('./Question');
-const Answer = require('./Answer');
 
 const _id = new WeakMap();
 const _questions = new WeakMap();
@@ -74,13 +71,3 @@ class Exam {
 }
 
 module.exports = Exam;
-
-const exam = new Exam(new Date(), 30);
-console.log(exam.toString());
-
-const participant1 = new Participant();
-const participant2 = new Participant();
-
-exam.addParticipant(participant1);
-exam.addParticipant(participant2);
-console.log(exam.toString());

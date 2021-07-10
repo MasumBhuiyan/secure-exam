@@ -35,5 +35,3 @@ const mcq = new MCQ({
 });
 
 module.exports = MCQ;
-
-console.log(mcq.toString());

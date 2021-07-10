@@ -5,11 +5,11 @@ const _questionString = new WeakMap();
 const _correctAnswer = new WeakMap();
 
 class Question {
-    constructor(question) {
+    constructor(questionString, correctAnswer) {
         const uniqueId = uuidv4();
         _id.set(this, uniqueId);
-        _questionString.set(this, question.questionString);
-        _correctAnswer.set(this, question.correctAnswer);
+        _questionString.set(this, questionString);
+        _correctAnswer.set(this, correctAnswer);
     }
 
     getId() {
@@ -44,16 +44,3 @@ class Question {
 }
 
 module.exports = Question;
-
-const question1 = new Question({
-    "questionString": "What is the capital of Bangladesh", 
-    "correctAnswer": "Dhaka"
-});
-
-const question2 = new Question({
-    "questionString": "Grass is green. True or false?", 
-    "correctAnswer": "True"
-});
-
-console.log(question1.toString());
-console.log(question2.toString());
