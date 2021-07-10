@@ -49,12 +49,10 @@ module.exports = AnswerSheet;
 
 
 const answer1 = new Answer(uuidv4(), "A"); 
-const answer2 = new Answer(uuidv4(), "B"); 
-const answer3 = new Answer(uuidv4(), "C"); 
-const answer4 = new Answer(uuidv4(), "D");
+const answer2 = new Answer(uuidv4(), "B");  
 
 const answerSheet = new AnswerSheet();
-answerSheet.write(answer3);
+answerSheet.write(answer1);
 answerSheet.write(answer2);
 
 console.log(answerSheet.getAnswers());

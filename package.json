@@ -19,6 +19,7 @@
   "homepage": "https://github.com/MasumBhuiyan/secure-exam#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "moment": "^2.29.1",
     "uuid": "^8.3.2"
   }
 }
